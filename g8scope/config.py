@@ -26,6 +26,9 @@ class Config:
         enabled: bool = True,
         sdk_name: str = "g8scope-python",
         sdk_version: str = "1.0.0",
+        max_retries: int = 2,
+        retry_base_ms: int = 100,
+        retry_cap_ms: int = 2000,
     ) -> None:
         self.key = key
         self.endpoint = endpoint
@@ -42,3 +45,6 @@ class Config:
         self.enabled = enabled
         self.sdk_name = sdk_name
         self.sdk_version = sdk_version
+        self.max_retries = int(max_retries)
+        self.retry_base_ms = int(retry_base_ms)
+        self.retry_cap_ms = int(retry_cap_ms)

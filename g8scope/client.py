@@ -6,6 +6,7 @@ from typing import Any, Dict, Optional
 
 from .config import Config
 from .envelope import build_envelope
+from .retry import RetryPolicy
 from .scrubber import Scrubber
 from .transport import Transport, UrllibTransport
 
@@ -24,7 +25,7 @@ class Client:
         scrubber: Optional[Scrubber] = None,
     ) -> None:
         self.config = config
-        self.transport = transport or UrllibTransport()
+        self.transport = transport or UrllibTransport(RetryPolicy.from_config(config))
         self.scrubber = scrubber or Scrubber(config.scrub_keys)
 
     def capture(
