@@ -23,7 +23,7 @@ dev = ["pytest"]
 
 [project.urls]
 Homepage = "https://scope.g8suite.com"
-Repository = "https://github.com/developers-hub-my/g8scope-python"
+Repository = "https://github.com/bliptrace/bliptrace-python"
 
 [tool.setuptools.packages.find]
 include = ["g8scope*"]
