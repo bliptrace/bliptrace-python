@@ -1,6 +1,6 @@
 import pytest
 
-from g8scope import Config, RetryPolicy
+from bliptrace import Config, RetryPolicy
 
 
 @pytest.mark.parametrize(

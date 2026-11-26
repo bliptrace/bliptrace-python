@@ -1,4 +1,4 @@
-"""Builds the language-neutral g8scope error envelope from a Python exception."""
+"""Builds the language-neutral Bliptrace error envelope from a Python exception."""
 
 from __future__ import annotations
 

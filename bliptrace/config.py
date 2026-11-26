@@ -24,7 +24,7 @@ class Config:
         scrub_keys: Optional[Sequence[str]] = None,
         base_path: str = "",
         enabled: bool = True,
-        sdk_name: str = "g8scope-python",
+        sdk_name: str = "bliptrace-python",
         sdk_version: str = "1.0.0",
         max_retries: int = 2,
         retry_base_ms: int = 100,

@@ -1,6 +1,6 @@
 import re
 
-from g8scope import Client, Config, Transport
+from bliptrace import Client, Config, Transport
 
 UUID_RE = re.compile(
     r"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
@@ -45,7 +45,7 @@ def test_builds_and_ships_a_valid_envelope():
     assert UUID_RE.match(env["event_id"])
     assert env["runtime"]["name"] == "python"
     assert env["runtime"]["version"]
-    assert env["sdk"]["name"] == "g8scope-python"
+    assert env["sdk"]["name"] == "bliptrace-python"
     assert env["level"] == "error"
     assert env["exception"]["type"] == "RuntimeError"
     assert env["exception"]["message"] == "boom"

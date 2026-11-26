@@ -1,7 +1,7 @@
 import json
 
-from g8scope import Config, RetryPolicy
-from g8scope.transport import UrllibTransport
+from bliptrace import Config, RetryPolicy
+from bliptrace.transport import UrllibTransport
 
 
 class ScriptedTransport(UrllibTransport):

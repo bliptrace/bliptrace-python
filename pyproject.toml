@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "g8scope"
+name = "bliptrace"
 version = "1.0.0"
-description = "Runtime Python SDK for the g8scope error-capture platform"
+description = "Runtime Python SDK for the Bliptrace error-capture platform"
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [{ name = "Developers Hub Sdn Bhd" }]
-keywords = ["g8scope", "error", "observability", "monitoring", "telemetry"]
+keywords = ["bliptrace", "error", "observability", "monitoring", "telemetry"]
 classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
@@ -26,7 +26,7 @@ Homepage = "https://scope.g8suite.com"
 Repository = "https://github.com/bliptrace/bliptrace-python"
 
 [tool.setuptools.packages.find]
-include = ["g8scope*"]
+include = ["bliptrace*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

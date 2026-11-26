@@ -1,4 +1,4 @@
-"""g8scope Python SDK — runtime error capture for the g8scope platform."""
+"""Bliptrace Python SDK — runtime error capture for the Bliptrace platform."""
 
 from .client import Client
 from .config import Config

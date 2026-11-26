@@ -1,8 +1,8 @@
-# g8scope Python SDK
+# Bliptrace Python SDK
 
-The runtime Python SDK for [g8scope](https://scope.g8suite.com) — a multi-tenant
+The runtime Python SDK for [Bliptrace](https://scope.g8suite.com) — a multi-tenant
 error-capture and observability platform. The SDK turns a native Python exception
-into the language-neutral g8scope **error envelope** and ships it to the ingest API.
+into the language-neutral Bliptrace **error envelope** and ships it to the ingest API.
 
 It does four things, and is designed to **never throw into your application**:
 
@@ -14,7 +14,7 @@ It does four things, and is designed to **never throw into your application**:
 ## Installation
 
 ```bash
-pip install g8scope
+pip install bliptrace
 ```
 
 Requires Python 3.8 or newer.
@@ -22,7 +22,7 @@ Requires Python 3.8 or newer.
 ## Usage
 
 ```python
-from g8scope import Client, Config
+from bliptrace import Client, Config
 
 client = Client(Config(
     key="your-ingest-key",
@@ -69,12 +69,12 @@ if envelope is not None:
 | `scrub_keys` | `[]` | Context keys to redact (case-insensitive). |
 | `base_path` | `""` | Frames whose file starts with this path (and are not in site-packages) are `in_app`. |
 | `enabled` | `True` | Master switch. |
-| `sdk_name` | `g8scope-python` | Reported SDK name. |
+| `sdk_name` | `bliptrace-python` | Reported SDK name. |
 | `sdk_version` | `1.0.0` | Reported SDK version. |
 
 ## A note on the project / tenant
 
-You never put a `project` in the payload. The g8scope server resolves the project
+You never put a `project` in the payload. The Bliptrace server resolves the project
 **server-side from the ingest key**, so a client cannot spoof another tenant. The
 key is the only thing that binds telemetry to a project.
 
