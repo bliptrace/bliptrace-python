@@ -14,7 +14,7 @@ class Config:
     def __init__(
         self,
         key: Optional[str] = None,
-        endpoint: str = "https://ingest.scope.g8suite.com",
+        endpoint: str = "https://ingest.bliptrace.com",
         environment: str = "production",
         release: Optional[str] = None,
         timeout: float = 3,

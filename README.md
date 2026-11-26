@@ -1,6 +1,6 @@
 # Bliptrace Python SDK
 
-The runtime Python SDK for [Bliptrace](https://scope.g8suite.com) — a multi-tenant
+The runtime Python SDK for [Bliptrace](https://bliptrace.com) — a multi-tenant
 error-capture and observability platform. The SDK turns a native Python exception
 into the language-neutral Bliptrace **error envelope** and ships it to the ingest API.
 
@@ -59,7 +59,7 @@ if envelope is not None:
 | Option | Default | Description |
 | --- | --- | --- |
 | `key` | `None` | Ingest key. No key means nothing is sent. |
-| `endpoint` | `https://ingest.scope.g8suite.com` | Ingest base URL; the SDK POSTs to `{endpoint}/v1/ingest`. |
+| `endpoint` | `https://ingest.bliptrace.com` | Ingest base URL; the SDK POSTs to `{endpoint}/v1/ingest`. |
 | `environment` | `production` | Environment marker. |
 | `release` | `None` | Release marker, e.g. `my-app@2026.06.25`. |
 | `timeout` | `3` | HTTP timeout in seconds. |

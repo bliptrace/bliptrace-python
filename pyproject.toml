@@ -22,7 +22,7 @@ dependencies = []
 dev = ["pytest"]
 
 [project.urls]
-Homepage = "https://scope.g8suite.com"
+Homepage = "https://bliptrace.com"
 Repository = "https://github.com/bliptrace/bliptrace-python"
 
 [tool.setuptools.packages.find]
